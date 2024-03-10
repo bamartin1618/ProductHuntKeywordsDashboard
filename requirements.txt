@@ -1,5 +1,5 @@
 plotly
 streamlit
-boto3
+git+https://github.com/boto/boto.git
 openai
 pandas
