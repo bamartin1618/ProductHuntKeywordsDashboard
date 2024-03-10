@@ -43,8 +43,10 @@ top_score = sorted_items[0]['total_score']
 
 # Prepare data for Plotly
 data = {
-    'Word': [element['word'].upper() if len(element['word']) <= 2 else element['word'].capitalize() for element in sorted_items],
-    'Score': [round(float(element['total_score']), 2) for element in sorted_items]
+    'Word': [element['word'].upper() if len(element['word']) <= 2 else element['word'].capitalize()
+             for element in sorted_items],
+    'Score': [round(float(element['total_score']), 2)
+              for element in sorted_items]
 }
 
 df = pd.DataFrame(data)
@@ -74,8 +76,8 @@ with col2:
         yaxis_title="Total Score",
         title={
             'text': "Weekly Trending Product Hunt Keywords",
-            'y':0.9,
-            'x':0.5,
+            'y': 0.9,
+            'x': 0.5,
             'xanchor': 'center',
             'yanchor': 'top'
         }
