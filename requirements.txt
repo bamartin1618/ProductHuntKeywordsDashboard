@@ -3,3 +3,4 @@ streamlit
 -e git+https://github.com/boto/boto3#egg=boto3
 openai
 pandas
+orjson
